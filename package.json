@@ -1,0 +1,22 @@
+{
+    "name": "cc-jetpack-widget",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
+        "watch": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+        "build": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
+        "format": "prettier ./src -w"
+    },
+    "devDependencies": {
+        "@types/node": "^11.6.0",
+        "@typescript-eslint/eslint-plugin": "^6.20.0",
+        "@typescript-eslint/parser": "^6.20.0",
+        "esbuild": "^0.20.0",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "nax-ccuilib": "github:krypciak/nax-ccuilib",
+        "prettier": "3.2.4",
+        "typescript": "^5.3.3",
+        "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
+    }
+}

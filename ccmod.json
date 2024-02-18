@@ -1,0 +1,16 @@
+{
+    "id": "cc-jetpack-widget",
+    "version": "0.0.1",
+    "title": "Jetpack widget",
+    "description": "Adds a jetpack quick menu widget",
+    "repository": "https://github.com/krypciak/cc-jetpack-widget",
+    "tags": ["widget", "speedrun", "fun", "cheats"],
+    "authors": "krypek",
+    "icons": {
+        "24": "icon/icon.png"
+    },
+    "dependencies": {
+        "nax-ccuilib": ">=1.2.3"
+    },
+    "plugin": "plugin.js"
+}

@@ -33,7 +33,7 @@ export default class JetpackWidget implements PluginClass {
             pressEvent: () => {
                 jetpackOn = !jetpackOn
             },
-            keepPressed: true,
+            toggle: true,
             image: () => ({
                 gfx: new ig.Image('media/gui/jetpackWidget.png'),
                 srcPos: { x: 0, y: 0 },

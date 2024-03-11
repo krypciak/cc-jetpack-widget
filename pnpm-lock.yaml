@@ -25,7 +25,7 @@ devDependencies:
     version: 9.1.0(eslint@8.57.0)
   nax-ccuilib:
     specifier: github:krypciak/nax-ccuilib
-    version: github.com/krypciak/nax-ccuilib/63d20e83b2ce2851b8ee425f9e3172b72e8c126c
+    version: github.com/krypciak/nax-ccuilib/7e107454ccde8de4b00dec298f19aa099b0a27ec
   prettier:
     specifier: 3.2.4
     version: 3.2.4
@@ -1234,8 +1234,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/krypciak/nax-ccuilib/63d20e83b2ce2851b8ee425f9e3172b72e8c126c:
-    resolution: {tarball: https://codeload.github.com/krypciak/nax-ccuilib/tar.gz/63d20e83b2ce2851b8ee425f9e3172b72e8c126c}
+  github.com/krypciak/nax-ccuilib/7e107454ccde8de4b00dec298f19aa099b0a27ec:
+    resolution: {tarball: https://codeload.github.com/krypciak/nax-ccuilib/tar.gz/7e107454ccde8de4b00dec298f19aa099b0a27ec}
     name: nax-ccuilib
     version: 1.2.4
     dev: true
@@ -1245,7 +1245,6 @@ packages:
     name: ultimate-crosscode-typedefs
     version: 0.0.1
     engines: {node: '>=10.0.0'}
-    prepare: true
     requiresBuild: true
     dependencies:
       '@types/jquery': 1.10.45

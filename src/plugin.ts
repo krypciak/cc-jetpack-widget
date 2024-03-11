@@ -2,6 +2,7 @@ import { PluginClass } from 'ultimate-crosscode-typedefs/modloader/mod'
 import { Mod1 } from './types'
 
 import 'nax-ccuilib/src/headers/nax/quick-menu-public-api.d.ts'
+import 'nax-ccuilib/src/headers/sc/quick-menu.d.ts'
 
 export default class JetpackWidget implements PluginClass {
     static dir: string
@@ -16,7 +17,7 @@ export default class JetpackWidget implements PluginClass {
 
     async poststart() {
         /* jetpack */
-        let jetpackOn = false
+        let jetpackOn = localStorage['ccuilib-quickmenuwidget-jetpack'] == 'true'
         const keyboardJetpackOn = !(sc.OPTIONS_DEFINITION['keys-jump'] /* CCJetpack */)
         if (keyboardJetpackOn) ig.input.bind(ig.KEY.CTRL, 'keys-jump')
         ig.ENTITY.Player.inject({
@@ -30,8 +31,8 @@ export default class JetpackWidget implements PluginClass {
             name: 'jetpack',
             title: 'Toggle jetpack',
             description: 'Press CTRL or gamepad A to fly.',
-            pressEvent: () => {
-                jetpackOn = !jetpackOn
+            pressEvent: button => {
+                jetpackOn = button.isToggleOn()
             },
             toggle: true,
             image: () => ({

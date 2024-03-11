@@ -25,7 +25,7 @@ devDependencies:
     version: 9.1.0(eslint@8.57.0)
   nax-ccuilib:
     specifier: github:krypciak/nax-ccuilib
-    version: github.com/krypciak/nax-ccuilib/7e107454ccde8de4b00dec298f19aa099b0a27ec
+    version: github.com/krypciak/nax-ccuilib/f681b4d1895a209995dc2ad150feae7ba2186395
   prettier:
     specifier: 3.2.4
     version: 3.2.4
@@ -1234,10 +1234,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/krypciak/nax-ccuilib/7e107454ccde8de4b00dec298f19aa099b0a27ec:
-    resolution: {tarball: https://codeload.github.com/krypciak/nax-ccuilib/tar.gz/7e107454ccde8de4b00dec298f19aa099b0a27ec}
+  github.com/krypciak/nax-ccuilib/f681b4d1895a209995dc2ad150feae7ba2186395:
+    resolution: {tarball: https://codeload.github.com/krypciak/nax-ccuilib/tar.gz/f681b4d1895a209995dc2ad150feae7ba2186395}
     name: nax-ccuilib
-    version: 1.2.4
+    version: 1.2.5
     dev: true
 
   github.com/krypciak/ultimate-crosscode-typedefs/29ce35b250c676bfbcd0d9ac6273a27fa7ed7126:

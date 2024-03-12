@@ -13,8 +13,8 @@ Adds a jetpack widget to [CCUILib](https://github.com/conorlawton/nax-ccuilib)
 ```bash
 git clone https://github.com/krypciak/cc-jetpack-widget
 cd cc-jetpack-widget
-npm install
-npm run start
+pnpm install
+pnpm run start
 # this should return no errors (hopefully)
 npx tsc
 ```

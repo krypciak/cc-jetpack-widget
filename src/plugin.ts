@@ -17,7 +17,8 @@ export default class JetpackWidget implements PluginClass {
 
     async poststart() {
         /* jetpack */
-        let jetpackOn = localStorage['ccuilib-quickmenuwidget-jetpack'] == 'true'
+        let jetpackOn = nax.ccuilib.QuickRingMenuWidgets.isWidgetToggledOn('jetpack')
+
         const keyboardJetpackOn = !(sc.OPTIONS_DEFINITION['keys-jump'] /* CCJetpack */)
         if (keyboardJetpackOn) ig.input.bind(ig.KEY.CTRL, 'keys-jump')
         ig.ENTITY.Player.inject({

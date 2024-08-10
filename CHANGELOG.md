@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 ## [1.0.4] 2024-07-23
+
+### Changed
+
+- Support the latest version of CCUILib
+
 ## [1.0.3] 2024-03-11
 ## [1.0.2] 2024-03-11
 ## [1.0.1] 2024-02-18

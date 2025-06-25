@@ -1,20 +1,8 @@
+import type {} from 'ultimate-crosscode-typedefs/crosscode-ccloader-all'
 import { PluginClass } from 'ultimate-crosscode-typedefs/modloader/mod'
-import { Mod1 } from './types'
-
-import 'nax-ccuilib/src/headers/nax/quick-menu-public-api.d.ts'
-import 'nax-ccuilib/src/headers/sc/quick-menu.d.ts'
+import type {} from 'nax-ccuilib/src/ui/quick-menu/quick-menu-extension'
 
 export default class JetpackWidget implements PluginClass {
-    static dir: string
-    static mod: Mod1
-
-    constructor(mod: Mod1) {
-        JetpackWidget.dir = mod.baseDirectory
-        JetpackWidget.mod = mod
-        JetpackWidget.mod.isCCL3 = mod.findAllAssets ? true : false
-        JetpackWidget.mod.isCCModPacked = mod.baseDirectory.endsWith('.ccmod/')
-    }
-
     async poststart() {
         /* jetpack */
         let jetpackOn = nax.ccuilib.QuickRingMenuWidgets.isWidgetToggledOn('jetpack')

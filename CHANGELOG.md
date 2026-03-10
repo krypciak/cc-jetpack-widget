@@ -3,6 +3,11 @@
 # Change Log
 
 ## [Unreleased]
+
+### Fixed
+
+- Improve compatibility with cc-instanceinator
+
 ## [1.0.4] 2024-07-23
 
 ### Changed

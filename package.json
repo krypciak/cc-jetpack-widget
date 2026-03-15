@@ -9,15 +9,15 @@
     },
     "devDependencies": {
         "@types/node": "^11.6.0",
-        "@typescript-eslint/eslint-plugin": "^6.20.0",
-        "@typescript-eslint/parser": "^6.20.0",
+        "@typescript-eslint/eslint-plugin": "^8.57.0",
+        "@typescript-eslint/parser": "^8.57.0",
         "ccmodmanager": "github:CCDirectLink/CCModManager",
-        "esbuild": "^0.20.0",
-        "eslint": "^8.56.0",
-        "eslint-config-prettier": "^9.1.0",
+        "esbuild": "^0.27.4",
+        "eslint": "^10.0.3",
+        "eslint-config-prettier": "^10.1.8",
         "nax-ccuilib": "github:krypciak/nax-ccuilib",
-        "prettier": "3.2.4",
-        "typescript": "^5.3.3",
+        "prettier": "3.8.1",
+        "typescript": "^5.9.3",
         "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
     }
 }

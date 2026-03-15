@@ -1,2 +1,6 @@
 allowBuilds:
   esbuild: true
+
+onlyBuiltDependencies:
+  - esbuild
+  - ultimate-crosscode-typedefs

@@ -3,4 +3,3 @@ allowBuilds:
 
 onlyBuiltDependencies:
   - esbuild
-  - ultimate-crosscode-typedefs

@@ -31,7 +31,11 @@ export default class JetpackWidget implements PluginClass {
         ig.ENTITY.Player.inject({
             update() {
                 this.parent()
-                if (ig.isJetpackOn && (ig.gamepad.isButtonDown(ig.BUTTONS.FACE0 /* a */) || (ig.isKeyboardJetpackOn && ig.input.state('keys-jump')))) {
+                if (
+                    ig.isJetpackOn &&
+                    (ig.gamepad.isButtonDown(ig.BUTTONS.FACE0 /* a */) ||
+                        (ig.isKeyboardJetpackOn && ig.input.state('keys-jump')))
+                ) {
                     ig.game.playerEntity.doJump(150, 16, 250)
                 }
             },
